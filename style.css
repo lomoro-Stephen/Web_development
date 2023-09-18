@@ -1,0 +1,128 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a background color and center the content */
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style the container */
+  .container {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+   /* Center the table within the container */
+   .table_wrap {
+    width: 40%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Style the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  caption{
+    background: #fccccc13;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  /* Style the table headers */
+  th {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style the table cells */
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* Add some spacing between table rows */
+  tr {
+    transition: background-color 0.3s;
+  }
+  /* Alternate row background colors */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    transition: 0.5s ease;
+  }
+  
+  /* Hover effect on table rows */
+  tbody tr:hover {
+    background-color: #d4d4d4;
+    cursor: pointer;
+  }
+  .btn{
+    padding: 10px;
+    background: #007BFF;
+    color: #f0f0f0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s ease;
+  }
+  .btn:hover{
+    background: #4faa46;
+  }
+
+
+  /* Responsive table design for small screens */
+  @media screen and (max-width: 600px) {
+    table {
+      width: 100%;
+    }
+  
+    th, td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    /* Style table headers for small screens */
+    th {
+      text-align: left;
+      background-color: #007BFF;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px;
+    }
+  
+    /* Add spacing between table cells */
+    td {
+      border: none;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+  
+    /* Alternate row background colors for small screens */
+    tbody tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+  
+    /* Hover effect on table rows for small screens */
+    tbody tr:hover {
+      background-color: #d4d4d4;
+    }
+  }
+
